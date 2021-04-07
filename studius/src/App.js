@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import logoWithText from "./components/logo-with-text.png"
+import logoWithText from "./Assets/logo-with-text.png"
 
 // Define components
 
@@ -55,17 +55,22 @@ class RegisterButton extends React.Component {
 
 function App() {
   return (
-    <div class="container">
-      <div class="bottomMargin">
-        <LogoWithText />
+    <div class="background">
+      <div class="container">
+        <div class="bottomMargin">
+          <LogoWithText />
 
-        <InputBox />
+          <InputBox />
 
-        <SubmitButton />
+          <SubmitButton />
 
-        <RegisterButton />
+          <RegisterButton />
+
+          <div class="orText">or</div>
+          <div class="signInAlternatives">sign in with Google // Spotify</div>
+        </div>
+
       </div>
-
     </div>
   );
 }
