@@ -1,3 +1,16 @@
+:root {
+  --offWhite: #FFF9F3;
+  --lightGray: #C4C4CE;
+  --lightPurple: #8D86C9;
+  --mediumPurple: #725AC1;
+  --darkPurple: #242038;
+  --testingRed: #F06543;
+}
+
+.background {
+  background-color: var(--lightPurple);
+}
+
 .container {
   margin: 0;
   position: absolute;
@@ -26,8 +39,8 @@
   width: 338px;
   height: 30px;
   margin: 8px 0;
-  color: #8D86C9;
-  background-color: #E5E5E5;
+  color: var(--lightPurple);
+  background-color: var(--offWhite);
   border: none;
   border-radius: 4px;
   padding: 19px 18px;
@@ -36,7 +49,7 @@
 }
 
 .loginFormInput::placeholder {
-  color: #8D86C9;
+  color: var(--lightPurple);
   opacity: 1;
   font-weight: normal;
 }
@@ -60,15 +73,15 @@
 }
 
 .loginButton {
-  background-color: #8D86C9; 
+  background-color: var(--lightPurple); 
   color: white; 
-  border: 3px solid #8D86C9;
+  border: 3px solid var(--lightPurple);
 }
 
 .loginButton:hover {
   background-color: white;
-  color: #8D86C9;
-  border: 3px solid #8D86C9;
+  color: var(--lightPurple);
+  border: 3px solid var(--lightPurple);
 }
 
 .registerButton {
@@ -76,8 +89,24 @@
   border: none; 
   font-family: "Quicksand";
   font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 89.5%;
-  color: #8D86C9;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 23px;
+}
+
+.orText {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  font-family: sans-serif;
+}
+
+.signInAlternatives {
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
