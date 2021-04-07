@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container2 {
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerCenter {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.bottomMargin {
+  margin-bottom: 50px;
+}
+
+.loginFormInput {
+  width: 338px;
+  height: 30px;
+  margin: 8px 0;
+  color: #8D86C9;
+  background-color: #E5E5E5;
+  border: none;
+  border-radius: 4px;
+  padding: 19px 18px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.loginFormInput::placeholder {
+  color: #8D86C9;
+  opacity: 1;
+  font-weight: normal;
+}
+
+.loginFormInput:focus {
+  border: "none";
+}
+
+.submitButton {
+  border: none;
   color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: "none";
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.loginButton {
+  background-color: #8D86C9; 
+  color: white; 
+  border: 3px solid #8D86C9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginButton:hover {
+  background-color: white;
+  color: #8D86C9;
+  border: 3px solid #8D86C9;
+}
+
+.registerButton {
+  background: none;
+  border: none; 
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 89.5%;
+  color: #8D86C9;
 }
