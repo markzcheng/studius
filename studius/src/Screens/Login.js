@@ -1,16 +1,24 @@
 import React from 'react';
-import '../App.css';
-import logoWithText from "../Assets/logo-with-text.png"
+import './Login-Register.css';
+import logo_white_outline from "../Assets/studius_logo_white_outline.png"
 
 // Define components
 
-class LogoWithText extends React.Component {
+class LogoWhiteOutline extends React.Component {
   render() {
       return (
           <div class="containerCenter">
-            <img src={logoWithText} width="280" height="211"/>
+            <img src={logo_white_outline} width="200" height="200"/>
           </div>
       );
+  }
+}
+
+class StudiusTextLogo extends React.Component {
+  render() {
+    return (
+      <p>studius</p>
+    )
   }
 }
 
@@ -58,7 +66,9 @@ function LoginScreen() {
     <div class="background">
       <div class="container">
         <div class="bottomMargin">
-          <LogoWithText />
+          <LogoWhiteOutline />
+
+          <StudiusTextLogo/>
 
           <InputBox />
 

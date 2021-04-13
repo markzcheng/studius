@@ -1,0 +1,124 @@
+@import "../Assets/colors.css";
+
+p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--offWhite);
+  margin: 10px;
+}
+
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container2 {
+  margin-top: 20px;
+}
+
+.containerCenter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomMargin {
+  margin-bottom: 50px;
+}
+
+.loginFormInput {
+  width: 338px;
+  height: 40px;
+  margin: 10px 0;
+  color: var(--lightPurple);
+  background-color: var(--offWhite);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.loginFormInput::placeholder {
+  color: var(--lightPurple);
+  opacity: 1;
+  font-weight: normal;
+}
+
+.loginFormInput:focus {
+  border: "none";
+}
+
+.submitButton {
+  border: none;
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: "none";
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.loginButton {
+  background-color: var(--lightPurple); 
+  color: white; 
+  border: 3px solid var(--lightPurple);
+}
+
+.loginButton:hover {
+  background-color: white;
+  color: var(--lightPurple);
+  border: 3px solid var(--lightPurple);
+}
+
+.registerButton {
+  background: none;
+  border: none; 
+  font-family: "Quicksand";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 89.5%;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 23px;
+}
+
+.orText {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  font-family: sans-serif;
+}
+
+.signInAlternatives {
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.studiusTextLogo {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--offWhite);
+}
