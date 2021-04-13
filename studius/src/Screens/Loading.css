@@ -1,0 +1,36 @@
+@import "../Assets/colors.css";
+
+.logoText {
+    margin-top: 20px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--offWhite);
+}
+
+.loadingDots {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--lightGray);
+    margin-bottom: 20px;
+}
+
+.sloganText {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 89.5%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--offWhite);
+}
