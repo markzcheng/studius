@@ -5,12 +5,11 @@ import RegisterScreen from "./Screens/Register"
 import LoadingScreen from "./Screens/Loading"
 // import { Route, Switch, Redirect } from 'react-router-dom';
 
-// Load screens into Route / App
-
+/* Load screens into App */
 function App() {
   return (
     <div>
-      <RegisterScreen/>
+      <LoginScreen/>
     </div>
   );
 }
