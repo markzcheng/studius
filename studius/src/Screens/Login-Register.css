@@ -38,7 +38,7 @@ p {
 
 .loginFormInput {
   width: 338px;
-  height: 40px;
+  height: 35px;
   margin: 10px 0;
   color: var(--lightPurple);
   background-color: var(--offWhite);
@@ -121,4 +121,11 @@ p {
   text-align: center;
   letter-spacing: -0.02em;
   color: var(--offWhite);
+}
+
+.errorMessage {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: var(--offWhite); 
 }
