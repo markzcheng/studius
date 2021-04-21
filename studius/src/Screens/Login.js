@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Login-Register.css';
 import logo_white_outline from "../Assets/studius_logo_white_outline.png"
 import app from "../Firebase.js";
+import {withRouter} from 'react-router-dom';
 
 // Define components
 
@@ -20,21 +21,6 @@ class StudiusTextLogo extends React.Component {
     return (
       <p>studius</p>
     )
-  }
-}
-
-class InputBox extends React.Component {
-  render() {
-    return (
-      <div class="container2">
-        <form>
-          <label for="e-mail"></label>
-          <input class="loginFormInput" type="text" id="e-mail" placeholder="e-mail" /><br/>
-          <label for="password"></label>
-          <input class="loginFormInput" type="password" id="password" placeholder="password" /><br/>
-        </form>
-      </div>
-    );
   }
 }
 
@@ -112,6 +98,11 @@ function LoginScreen() {
   useEffect(() => {
     authListener();
   }, []);
+
+  /*
+  nextPath((path) => { 
+    this.props.history.push(path);
+  });*/
 
 
   return (
