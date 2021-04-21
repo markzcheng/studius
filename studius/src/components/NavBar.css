@@ -1,0 +1,83 @@
+@import "../Assets/colors.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.navbar {
+    background-color: none;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-bars {
+    background: none;
+}
+
+.menu-bars-space {
+    margin: 2rem;
+}
+
+/* Left sidebar box*/
+.nav-menu {
+    background-color: var(--lightPurple);
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 450ms;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 300ms;
+}
+
+.nav-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    list-style: none;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.nav-text a {
+    align-items: center;
+    text-decoration: none;
+    color: var(--offWhite);
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.nav-text a:hover {
+    background-color: var(--darkPurple);
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.navbar-toggle {
+    background-color: none;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
