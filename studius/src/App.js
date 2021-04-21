@@ -3,14 +3,20 @@ import './App.css';
 import LoginScreen from "./Screens/Login"
 import RegisterScreen from "./Screens/Register"
 import LoadingScreen from "./Screens/Loading"
-// import { Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 /* Load screens into App */
 function App() {
   return (
-    <div>
-      <LoginScreen/>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/">
+            <LoginScreen/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
