@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Login-Register.css';
 import logo_white_outline from "../Assets/studius_logo_white_outline.png";
+import white_arrow from "../Assets/whitearrow.png"
 import app from "../Firebase.js";
 
 // Define components
@@ -47,7 +48,7 @@ class SubmitButton extends React.Component {
     return (
       <div class="containerCenter">
         <button class="submitButton loginButton" type="submit" onClick={function() { alert('click'); }}>
-          <h2>==></h2>
+          <img src={white_arrow} width="60" height="70"/>
         </button>
       </div>
     )
@@ -163,11 +164,7 @@ function RegisterScreen() {
             </form>
           </div>
 
-          <div class="containerCenter">
-            <button class="submitButton loginButton" type="submit" onClick={handleSignup}>
-              <h2>==></h2>
-            </button>
-          </div>
+          <SubmitButton />
 
           <RegisterButton />
 

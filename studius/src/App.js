@@ -4,9 +4,6 @@ import './App.css';
 import LoginScreen from "./Screens/Login"
 import RegisterScreen from "./Screens/Register"
 import LoadingScreen from "./Screens/Loading"
-<<<<<<< Updated upstream
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-=======
 import StudyScreen from "./Screens/Study"
 import CalendarScreen from "./Screens/Calender"
 import TasksScreen from "./Screens/Tasks"
@@ -17,24 +14,12 @@ import ProfileScreen from "./Screens/Profile"
 import NavBar from "./components/NavBar"
 
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
->>>>>>> Stashed changes
 
 /* Load screens into App */
 
 
 function App() {
   return (
-<<<<<<< Updated upstream
-    <Router>
-      <div>
-        <Switch>
-          <Route path="/">
-            <LoginScreen/>
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-=======
     <div>
       <Router>
         <NavBar />
@@ -50,7 +35,6 @@ function App() {
         </Switch>
       </Router>
     </div>
->>>>>>> Stashed changes
   );
 }
 
