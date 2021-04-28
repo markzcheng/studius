@@ -1,9 +1,9 @@
 import React from "react";
 
-function SettingsScreen () {
+function SettingsScreen() {
     return (
         <div>settings</div>
-    )
+    );
 }
 
 export default SettingsScreen;

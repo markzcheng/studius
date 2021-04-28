@@ -1,9 +1,9 @@
 import React from "react";
 
-function MusicScreen () {
+function MusicScreen() {
     return (
         <div>Music</div>
-    )
+    );
 }
 
 export default MusicScreen;
