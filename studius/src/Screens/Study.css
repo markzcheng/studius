@@ -1,0 +1,68 @@
+@import "../Assets/colors.css";
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 54px;
+    color: var(--offWhite);
+}
+
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+  
+.timer-box {
+    background-color: var(--lightPurple);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.text {
+    color: var(--offWhite);
+}
+  
+.value {
+    font-size: 40px;
+}
+  
+.info {
+    max-width: 360px;
+    margin: 10px auto 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.buttonHolder {
+    display: block;
+    padding-bottom: 10px; 
+    text-align: center;
+}
+
+.historyButton {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: var(--offWhite);
+    border-radius: 40px;
+    padding: 10px 35px;
+    border: none;
+    font-size: 22px;
+}
+
+.resetButton {
+    background-color: var(--offWhite);
+    border-radius: 40px;
+    padding: 8px 28px;
+    border: none;
+    font-size: 22px;
+}
