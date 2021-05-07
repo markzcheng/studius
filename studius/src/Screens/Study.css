@@ -8,6 +8,10 @@ h1 {
     color: var(--offWhite);
 }
 
+h4 {
+    color: var(--darkPurple);
+}
+
 .timer-wrapper {
     display: flex;
     justify-content: center;
@@ -17,8 +21,14 @@ h1 {
   
 .timer-box {
     background-color: var(--lightPurple);
-    padding: 50px;
+    padding: 30px;
     border-radius: 30px;
+}
+
+.timer-bg {
+    background-color: var(--offWhite);
+    padding: 30px;
+    border-radius: 200px;
 }
 
 .timer {
@@ -49,7 +59,7 @@ h1 {
     text-align: center;
 }
 
-.historyButton {
+.startButton {
     margin-top: 20px;
     margin-bottom: 10px;
     background-color: var(--offWhite);
@@ -59,10 +69,28 @@ h1 {
     font-size: 22px;
 }
 
+.pauseButton {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: var(--offWhite);
+    border-radius: 40px;
+    padding: 10px 26px;
+    border: none;
+    font-size: 22px;
+}
+
+.historyButton {
+    background-color: var(--offWhite);
+    border-radius: 40px;
+    padding: 8px 24px;
+    border: none;
+    font-size: 18px;
+}
+
 .resetButton {
     background-color: var(--offWhite);
     border-radius: 40px;
     padding: 8px 28px;
     border: none;
-    font-size: 22px;
+    font-size: 18px;
 }
