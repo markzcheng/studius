@@ -24,8 +24,8 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/" exact component={LoginScreen}/>
-          <Route path="/register" exact component={RegisterScreen}/>
+          <Route path="/" exact component={RegisterScreen}/>
+          <Route path="/login" exact component={LoginScreen}/>
           <Route path="/study" exact component={StudyScreen}/>
           <Route path="/calendar" component={CalendarScreen}/>
           <Route path="/tasks" component={TasksScreen}/>

@@ -3,6 +3,7 @@ import './Login-Register.css';
 import logo_white_outline from "../Assets/studius_logo_white_outline.png";
 import white_arrow from "../Assets/whitearrow.png"
 import app from "../Firebase.js";
+import {withRouter, useHistory} from 'react-router-dom';
 
 // Define components
 
@@ -137,6 +138,13 @@ function RegisterScreen() {
     });
   };
 
+  const history = useHistory();
+
+  const routeChange = () =>{ 
+    let path = '/login'; 
+    history.push(path);
+  }
+
   useEffect(() => {
     authListener();
   }, []);
@@ -166,7 +174,9 @@ function RegisterScreen() {
 
           <SubmitButton />
 
-          <RegisterButton />
+          <div class="containerCenter">
+            <button class="registerButton" onClick={routeChange} >already have an account? login</button>
+          </div>
 
           <div class="orText">or</div>
           <div class="signInAlternatives">sign in with Google // Spotify</div>

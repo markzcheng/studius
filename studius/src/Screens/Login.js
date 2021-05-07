@@ -3,7 +3,7 @@ import './Login-Register.css';
 import logo_white_outline from "../Assets/studius_logo_white_outline.png"
 import white_arrow from "../Assets/whitearrow.png"
 import app from "../Firebase.js";
-import {withRouter} from 'react-router-dom';
+import {withRouter, useHistory} from 'react-router-dom';
 
 // Define components
 
@@ -97,14 +97,16 @@ function LoginScreen() {
     });
   };
 
+  const history = useHistory();
+
+  const routeChange = () =>{ 
+      let path = '/study'; 
+      history.push(path);
+    }
+
   useEffect(() => {
     authListener();
   }, []);
-
-  /*
-  nextPath((path) => { 
-    this.props.history.push(path);
-  });*/
 
 
   return (
@@ -126,7 +128,12 @@ function LoginScreen() {
             </form>
           </div>
 
-          <SubmitButton />
+          <div class="containerCenter">
+            <button class="submitButton loginButton" type="submit" onClick={routeChange}>
+              <img src={white_arrow} width="60" height="70"/>
+                {/* <h2>==></h2> */}
+            </button>
+          </div>
 
           <RegisterButton />
 
